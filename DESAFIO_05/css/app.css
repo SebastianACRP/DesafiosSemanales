@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5975B0;
+}
+
+header {
+    text-align: center;
+}
+
+.card5 {
+    width: 25vw;
+}
+
+h1,
+h2 {
+    color: #BB5397;
+}
+
+h1 {
+    letter-spacing: 0.8vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    letter-spacing: 0.3vw;
+}
+
+p {
+    margin-bottom: 2vh;
+}
+
+.card1 {
+    float: right;
+    width: 25vw;
+    height: 100%;
+    margin-left: 0.5%;
+}
+
+.card2 {
+    float: left;
+    width: 25vw;
+    height: 100%;
+    margin-right: 0.5%;
+}
+
+.card4 {
+    width: 100%;
+}
+
+footer {
+    margin-top: 1%;
+}
+
+/* Tamaño Mediano */
+ @media (max-width: 992px) and (min-width: 769px) {
+        .card1 {
+            width: 47.25%;
+            height: 52vh;
+        }
+
+        .seccion1 {
+            margin: 1%;
+        }
+
+        h1 {
+            letter-spacing: 1.8vw;
+        }
+
+        h2 {
+            margin: 1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            letter-spacing: 0.85vw;
+        }
+
+        .card2 {
+            width: 47.25%;
+            height: 52vh;
+        }
+}
+
+/* Tamaño Chico */
+@media (max-width: 768px) and (min-width: 481px) {
+        .card1 {
+            width: 75%;
+        }
+
+        .seccion1 {
+            margin: 1%;
+        }
+
+        h1 {
+            letter-spacing: 3.5vw;
+        }
+
+        h2 {
+            margin: 1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            letter-spacing: 1.6vw;
+        }
+
+        .card2 {
+            width: 75%;
+        }
+    }
+
+/* Tamaño XS */
+@media (max-width:480px) {
+    .card1 {
+        width: 100%;
+        padding-left: 4%;
+    }
+
+    .seccion1 {
+        margin: 0.25%;
+    }
+
+    h1 {
+        letter-spacing: 3.5vw;
+    }
+
+    h2 {
+        margin: 0.25%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        letter-spacing: 1.7vw;
+    }
+
+    .card2 {
+        width: 100%;
+        padding-right: 4%;
+    }
+}
