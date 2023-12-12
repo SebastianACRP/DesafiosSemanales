@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;900&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;400;600;900&family=Roboto:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.6)), url(../img/GIMNASIO.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #aeacff;
+
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    /* display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+
+
+    grid-template-areas:
+        "header header header header header header"
+        "main   main   main   main   main   main"
+        "footer footer footer footer footer footer"; */
+
+    gap: 1vw;
+
+}
+
+/* main {
+
+    width: 20%;
+    grid-area: main;
+
+} */
+
+img {
+    width: 1vw;
+    height: fit-content;
+}
+
+.img-musculo {
+    width: 2vw;
+}
+
+.img-neon1 {
+    width: 2.8vw;
+    margin-top: 2vh;
+
+}
+
+
+input {
+    margin: .5vw 0;
+    padding: .3vw;
+
+}
+
+
+p {
+    margin-bottom: 1vw;
+}
+
+h1 {
+    font-size: 5em;
+    color: #6966e9;
+    text-shadow: 2px 3px 3px white;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+legend {
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #FB2576;
+    padding: .3vw;
+    border-radius: .5vw / .5vw;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* header {
+
+    grid-area: header;
+} */
+
+fieldset {
+
+    background-color: #3F0071;
+    margin-top: 2vw;
+    border-inline: 8px groove #FB2576;
+    border-radius: 3vw / 3vw;
+    box-shadow: 1px 2px 15px aqua;
+}
+
+
+/* .foooter {
+
+    grid-area: footer;
+} */
+
+.foooter input {
+    background-color: #FB2576;
+    color: #c4c3fd;
+    padding: .5vw;
+    border-radius: .5vw / .5vw;
+    border: 1px solid white;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+.foooter input:hover {
+    box-shadow: 1px 2px 7px gray;
+    color: white;
+
+}
+
+.info {
+    color: #aeacff;
+    font-size: 1em;
+    text-align: start;
+    margin-top: 2vw;
+    margin-left: 1vw;
+
+}
+
+
+.actividades {
+    text-align: start;
+    padding: 1vw;
+
+}
+
+.datos-de-contacto,
+.datospersonales {
+    display: grid;
+
+    padding: 1vw;
+}
+
+form {
+    font-size: .8vw;
+
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    background-color: rgb(205, 253, 253);
+    border: none;
+    border-radius: .3vw / .3vw;
+    
+
+}
+
+
+.datospersonales input,
+.datos-de-contacto input {
+    width: 100%;
+    background-color: rgb(205, 253, 253);
+    border: none;
+    border-radius: .3vw / .3vw;
+
+}
+
+.campo-obligatorio {
+    color: white;
+    background-color: rgb(78, 54, 214);
+    border-radius: .3vw / .3vw;
+    width: fit-content;
+    padding: .2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.buttonstyle {
+
+    background-color: #000000;
+    color: #ffffff;
+    padding: .2vw;
+    border-radius: .5vw / .5vw;
+    border: 1px solid white;
+    font-size: 1em;
+    cursor: pointer;
+}

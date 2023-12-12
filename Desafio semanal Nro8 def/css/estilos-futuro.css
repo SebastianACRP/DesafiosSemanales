@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;900&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;400;600;900&family=Roboto:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.6)), url(../img/GIMNASIO.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #aeacff;
+
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+
+}
+
+main {
+    margin: 2vw
+
+} 
+
+img {
+    width: 1vw;
+    height: fit-content;
+}
+
+.img-musculo {
+    width: 2vw;
+}
+
+.img-neon1 {
+    width: 2.8vw;
+    margin-top: 2vh;
+
+}
+
+
+input {
+    margin: .5vw 0;
+    padding: .3vw;
+
+}
+
+
+p {
+    margin-bottom: 1vw;
+}
+
+h1 {
+    font-size: 5em;
+    color: #6966e9;
+    text-shadow: 2px 3px 3px white;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+legend {
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #FB2576;
+    padding: .3vw;
+    border-radius: .5vw / .5vw;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* header {
+
+    grid-area: header;
+} */
+
+fieldset {
+
+    background-color: #3F0071;
+    margin-top: 2vw;
+    border-inline: 8px groove #FB2576;
+    border-radius: 3vw / 3vw;
+    box-shadow: 1px 2px 15px aqua;
+}
+
+
+/* .foooter {
+
+    grid-area: footer;
+} */
+
+.footer input {
+    background-color: #FB2576;
+    color: #c4c3fd;
+    padding: .5vw;
+    border-radius: .5vw / .5vw;
+    border: 1px solid white;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+.footer input:hover {
+    box-shadow: 1px 2px 7px gray;
+    color: white;
+
+}
+
+.info {
+    color: #aeacff;
+    font-size: 1em;
+    text-align: start;
+    margin-top: 2vw;
+    margin-left: 1vw;
+
+}
+
+
+.actividades {
+    text-align: start;
+    padding: 1vw;
+
+}
+
+.datos-de-contacto,
+.datospersonales {
+    display: grid;
+
+    padding: 1vw;
+}
+
+form {
+    font-size: .8vw;
+
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    background-color: rgb(205, 253, 253);
+    border: none;
+    border-radius: .3vw / .3vw;
+    
+
+}
+
+
+.datospersonales input,
+.datos-de-contacto input {
+    width: 100%;
+    background-color: rgb(205, 253, 253);
+    border: none;
+    border-radius: .3vw / .3vw;
+
+}
+
+.campo-obligatorio {
+    color: white;
+    background-color: rgb(78, 54, 214);
+    border-radius: .3vw / .3vw;
+    width: fit-content;
+    padding: .2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.change {
+
+    background-color: #FB2576;
+    color: #c4c3fd;
+    padding: .5vw;
+    border-radius: .5vw / .5vw;
+    border: 1px solid white;
+    font-size: 1em;
+     cursor: pointer;
+}
+
+.change:hover {
+    box-shadow: 1px 2px 7px gray;
+    color: white;
+
+}
+
+
+@media (max-width:3000px) {
+    label {
+        font-size: 1vw;
+    }
+
+    legend {
+        font-size: 1vw;
+    }
+    
+    input {
+        font-size: 1vw;
+    } 
+
+    .img-musculo {
+        width: 2vw;
+        }
+}
+
+
+
+@media (max-width:1000px) {
+
+    label {
+        font-size: 2vw;
+    }
+
+    legend {
+        font-size: 2vw;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 2vw;
+    }
+
+    .info {
+        font-size: 2vw;
+    }
+
+    div {
+        font-size: 2vw;
+    }
+
+    img {
+         width: 2.8vw;
+    }
+
+    .img-musculo {
+        width: 5vw;
+     }
+}
+
+
+@media (max-width:700px) {
+
+    label {
+        font-size: 2.5vw;
+    }
+
+    legend {
+        font-size: 2.5vw;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 2.5vw;
+    }
+
+    .info {
+        font-size: 2.5vw;
+    }
+
+    div {
+        font-size: 2.5vw;
+    }
+
+    img {
+        width: 3.5vw;
+    }
+
+     .img-musculo {
+        width: 7.5vw;
+     }
+}
+
+@media (max-width:520px) {
+
+    label {
+        font-size: 3.5vw;
+    }
+
+    legend {
+        font-size: 3.5vw;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 3.5vw;
+    }
+
+    .info {
+        font-size: 3.5vw;
+    }
+
+    div {
+        font-size: 3.5vw;
+    }
+
+    img {
+         width: 5vw;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .img-musculo {
+        width: 8vw;
+    }
+}

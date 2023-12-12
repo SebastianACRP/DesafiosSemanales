@@ -1,0 +1,59 @@
+@use "../asbtracts/variables" as var;
+@use "../asbtracts/mixins" as mix;
+
+@media (max-width: 1280px) {
+    .body {
+        .main__form {
+            .modal {
+                .modal-content {
+                    height: 30vh;
+                    width: 40vw;
+                    left: 30vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .body {
+        .main__form {
+            .modal {
+                .modal-content {
+                    height: 30vh;
+                    width: 50vw;
+                    left: 25vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        .main__form {
+            .modal {
+                .modal-content {
+                    height: 30vh;
+                    width: 60vw;
+                    left: 20vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        .main__form {
+            .modal {
+                .modal-content {
+                    height: 30vh;
+                    width: 80vw;
+                    left: 10vw;
+                }
+            }
+        }
+    }
+}

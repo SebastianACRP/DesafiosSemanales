@@ -1,0 +1,80 @@
+@use "../asbtracts/variables" as var;
+@use "../asbtracts/mixins" as mix;
+
+.main {
+    grid-area: main;
+
+    h3 {
+        color: red;
+        font-size: 2rem;
+    }
+
+    .section {
+
+        &__gallery {
+            /*display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 10vw 0 10vw;
+            gap: 1vh;
+            place-items: center;*/
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1vh;
+            justify-content: center;
+            padding: 2vh 10vw 2vh 10vw;
+        }
+
+        &--products {
+            background-color: white;
+
+            h3 {
+                color: red;
+            }
+        }
+
+        .button__container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 0 10vw 0 10vw;
+            margin: 1vh 0 1vh 0;
+        }
+    }
+
+
+}
+
+.main__form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+
+    .section__form {
+        padding: 2vh;
+        border: 1px solid grey;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &--data {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid grey;
+            padding: 2vh;
+            margin-bottom: 5px;
+
+            .button {
+
+                align-self: end;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+
+}

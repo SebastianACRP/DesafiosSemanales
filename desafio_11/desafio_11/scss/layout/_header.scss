@@ -1,0 +1,16 @@
+@use "../asbtracts/variables" as var;
+@use "../asbtracts/mixins" as mix;
+
+.header{
+    grid-area: header;
+    background: black;
+    height: min-content;
+
+    h1 {
+        background: black;
+        background: radial-gradient(red, white);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+    }
+}

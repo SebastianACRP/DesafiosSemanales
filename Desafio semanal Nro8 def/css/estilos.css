@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;900&family=Roboto:wght@100;300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(43, 42, 42);
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+    height: max-content;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1vw;
+
+}
+
+.button-estilos button {
+    background-color: #567e6e;
+        color: white;
+        padding: .5vw;
+        border-radius: .5vw / .5vw;
+        border: 1px solid gray;
+        font-size: 1em;
+        cursor: pointer;
+        margin-bottom: 1vh;
+}
+
+img {
+    width: 1vw;
+    height: fit-content;
+}
+
+.img-musculo {
+    width: 2vw;
+
+}
+
+input {
+    margin: .5vw 0;
+    text-align: right;
+}
+
+input:focus {
+    background-color: #567e6e;
+}
+
+.separador1,
+.separador2 {
+    border-bottom: 0.8vw dotted rgb(213, 225, 222);
+    width: 140px;
+    display: flex;
+    align-items: center; 
+    margin-top: 3vh;
+    margin-bottom: 0.5vh; 
+}
+
+h1 {
+
+    color: white;
+    border-style: inset none inset none;
+    border-bottom: 8px solid #567e6e;
+    border-top: 8px solid #567e6e;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+legend {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: start;
+    background-color: #567e6e;
+    border-radius: .5vw / .5vw;
+    padding: .5vw;
+    margin: 1vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+fieldset {
+    background-color: #d5e7e6;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+main {
+    margin: 2vw;
+    align-items: center;
+}
+
+.footer input {
+    background-color: #567e6e;
+    color: white;
+    padding: .5vw;
+    border-radius: .5vw / .5vw;
+    border: 1px solid gray;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+.info {
+    color: white;
+    font-size: 1em;
+    text-align: start;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+.actividades {
+    text-align: start;
+    padding: 1vw;
+}
+
+form {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    resize: vertical;
+    width: 80%;
+}
+
+.datospersonales,
+.datos-de-contacto {
+    display: grid;
+    grid-template-columns: repeat(1, 75%);
+    place-content: center;
+}
+
+.datospersonales input,
+.datospersonales textarea,
+.datospersonales select,
+.datos-de-contacto input {
+    width: 100%;
+}
+
+
+@media (max-width:3000px) {
+    label {
+        font-size: 1vw;
+    }
+
+    legend {
+        font-size: 1vw;
+    }
+
+    input {
+        font-size: 1vw;
+    }
+
+    .img-musculo {
+        width: 2vw;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+
+    label {
+        font-size: 2vw;
+    }
+
+    legend {
+        font-size: 2vw;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 2vw;
+    }
+
+    .info {
+        font-size: 2vw;
+    }
+
+    div {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 2.8vw;
+    }
+
+    .img-musculo {
+        width: 5vw;
+    }
+}
+
+
+@media (max-width:700px) {
+
+    label {
+        font-size: 2.5vw;
+    }
+
+    legend {
+        font-size: 2.5vw;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 2.5vw;
+    }
+
+    .info {
+        font-size: 2.5vw;
+    }
+
+    div {
+        font-size: 2.5vw;
+    }
+
+    img {
+        width: 3.5vw;
+    }
+
+    .img-musculo {
+        width: 7.5vw;
+    }
+}
+
+@media (max-width:520px) {
+
+    label {
+        font-size: 3.5vw;
+    }
+
+    legend {
+        font-size: 3.5vw;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 3.5vw;
+    }
+
+    .info {
+        font-size: 3.5vw;
+    }
+
+    div {
+        font-size: 3.5vw;
+    }
+
+    img {
+        width: 5vw;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .img-musculo {
+        width: 8vw;
+    }
+}
