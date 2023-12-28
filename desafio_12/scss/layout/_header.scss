@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    background-color: var.$headerColor;
+    color: azure;
+
+    .navbar {
+        align-self: flex-start;
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+        }
+
+        .history {
+            justify-self: center;
+        }
+    }
+
+    .link-active {
+        color: red !important;
+    }
+}
