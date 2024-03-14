@@ -1,0 +1,55 @@
+@use "../../styles/variables" as var;
+
+.main {
+
+    grid-area: main;
+    background-color: var.$colorBackgroundLighter;
+    padding: 1vh;
+    color: var.$colorFontDarker;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    .searchForm {
+
+        display: flex;
+        justify-content: center;
+        background-color: var.$colorBackgroundLighter;
+        width: 100%;
+        padding: 3vh;
+
+        &__container {
+
+            display: flex;
+            border-radius: 5px;
+            width: 500px;
+
+            &--input {
+
+                border: none;
+                border-radius: 5px 0 0 5px;
+                width: 100%;
+                outline: none;
+                padding: 1vh;
+            }
+
+            &--btn {
+
+
+                border: none;
+                border-radius: 0 5px 5px 0;
+                background-color: var.$colorDark;
+                color: var.$colorBackgroundLighter;
+                height: max-content;
+                padding: 1vh;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: var.$colorDark;
+                }
+            }
+        }
+
+
+    }
+}

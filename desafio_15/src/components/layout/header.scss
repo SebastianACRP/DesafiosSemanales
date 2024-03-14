@@ -1,0 +1,15 @@
+@use "../../styles/variables" as var;
+
+.header {
+    grid-area: header;
+
+    background-color: var.$colorDark;
+    color: var.$colorBackgroundLighter;
+    text-align: center;
+    padding: 1vh;
+
+    h2 {
+        font-size: medium;
+    }
+
+}

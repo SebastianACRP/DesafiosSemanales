@@ -1,0 +1,10 @@
+@use "../../styles/variables" as var;
+
+.footer {
+    grid-area: footer;
+
+    background-color: var.$colorDark;
+    padding: 1vh;
+    color: var.$colorBackgroundLighter;
+    text-align: center;
+}

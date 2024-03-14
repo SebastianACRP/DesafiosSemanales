@@ -1,0 +1,53 @@
+@use "../../styles/variables" as var;
+
+.main {
+
+    grid-area: main;
+    background-color: var.$colorBackgroundLighter;
+    padding: 1vh;
+    color: var.$colorFontDarker;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    .taskForce {
+        display: flex;
+        gap: 5px;
+
+    }
+
+    .taskList {
+
+
+        color: var.$colorFontDarker;
+        padding: 1vh;
+        width: 30vw;
+
+        .listItem {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0.2vh;
+            width: 100%;
+
+            li {
+                display: flex;
+                gap: 5px;
+
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    color: var.$colorDark;
+                    padding: 0.1vh;
+                    font-weight: bold;
+
+                }
+            }
+
+        }
+
+    }
+
+
+}
