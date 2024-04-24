@@ -1,0 +1,14 @@
+.form-product {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    .form-product__image {
+
+        width: 200px;
+        object-fit: contain;
+        align-self: center;
+
+    }
+
+}

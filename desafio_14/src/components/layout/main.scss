@@ -1,0 +1,197 @@
+.main {
+
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 1vh;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .noteForm {
+        min-width: 300px;
+        color: darkcyan;
+        padding: 2vh;
+        background-color: #fefefe;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+
+        p {
+            text-align: center;
+            font-size: large;
+            margin-bottom: 5px;
+            font-weight: bolder;
+        }
+
+        &__data {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px;
+            width: 100%;
+
+            &--input {
+                display: flex;
+                width: 100%;
+                border: 1PX SOLID transparent;
+                outline: none;
+
+                &:focus {
+                    border-bottom: 1px solid darkcyan;
+                    //outline: 1px solid darkcyan;
+                }
+
+            }
+
+            textarea {
+                resize: vertical;
+                height: 50px;
+
+                overflow: auto;
+
+            }
+        }
+
+        &--btn {
+            display: flex;
+            justify-content: right;
+
+            button {
+                padding: 2px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .noteList {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #fefefe;
+        padding: 2vh;
+        gap: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 5px;
+        background-color: beige;
+
+
+        .listItem {
+
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 1vh;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: #fefefe;
+
+            &--noteName {
+                color: darkcyan;
+                border: none;
+                font-weight: bolder;
+                padding-bottom: 5px;
+                outline: none;
+                font-size: large;
+
+                &:focus {
+                    outline: 1px solid grey;
+                }
+            }
+
+            &--noteDesc {
+                margin-top: 1px;
+                border: none;
+                color: grey;
+                height: 100px;
+                outline: none;
+                resize: none;
+
+                &:focus {
+                    outline: 1px solid grey;
+                }
+            }
+
+            &--buttons {
+
+                display: flex;
+                flex-direction: row-reverse;
+                width: min-content;
+                margin: 5px 2px 5px auto;
+                padding: 2px;
+                gap: 1px;
+
+                .btn:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+
+                .btnFav {
+                    filter: grayscale(0);
+
+                    &:hover {
+                        filter: grayscale(1);
+                    }
+
+                }
+
+                .btnNotFav {
+                    filter: grayscale(1);
+
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: darkcyan;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltipDelete::before {
+    content: "Eliminar de favoritos";
+
+}
+
+.tooltipAdd::before {
+    content: "Añadir a favoritos";
+}
